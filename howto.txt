@@ -1,0 +1,10 @@
+file 0: I had to run the executable to get the secret
+file 1: ran ltrace which shows calls to shared libraries, and then I converted
+the value rand() func produced to decimal value (the value after = sign)
+file 2: I ran ltrace and I found the call to the function exited with zero
+so that means success
+file 3: I ran ltrace and I had to create a file named "iamspecial" in the same 
+directory I have my other files. I also changed the accessibility of the 
+the file by running chmod 754 iamspecial so the binary files can access
+it.
+file 4: I created a shared library and  ran setenv LD_Library_path <path>
